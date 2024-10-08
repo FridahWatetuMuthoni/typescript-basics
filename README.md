@@ -29,3 +29,14 @@ npx tsc index.ts
 npx tsc --watch
 
 ```
+
+5. Creating an npm script to run typescript and javascript code
+
+```json
+{
+  "scripts": {
+    "build": "tsc app.ts --target es2017",
+    "start": "npm run build && node app.js"
+  }
+}
+```
